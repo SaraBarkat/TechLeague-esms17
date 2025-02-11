@@ -1,0 +1,518 @@
+/* Style de base */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #cde7f4;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #FFFFFF;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;           /* Alignement vertical centré */
+    justify-content: space-between; /* Distribution des espaces */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Logo à gauche */
+  .nav-logo .logo-img {
+    height: 40px;
+    transition: transform 0.3s ease;
+  }
+  
+  .nav-logo .logo-img:hover {
+    transform: scale(1.1); /* Zoom léger au survol */
+  }
+  
+  /* Liens de navigation centrés */
+  .nav-menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;   /* Espacement entre les liens */
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Liens */
+  .nav-item a {
+    text-decoration: none;
+    color: #010851;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    padding: 8px 12px;
+    font-weight: bold;
+  }
+  
+  .nav-item a:hover {
+    color: #FFFFFF;
+    background-color: #010851;
+    border-radius: 5px;
+    
+  }
+  
+  /* Bouton Sign Up à droite */
+  .nav-signup .btn-signup {
+    background-color: #010851;
+    color: #FFFFFF;
+    padding: 8px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: bold;
+  }
+  
+  .nav-signup .btn-signup:hover {
+    background-color: #FFB703;
+    color: #010851;
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .nav-menu {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .nav-signup {
+      margin-top: 10px;
+    }
+  }
+/* SECTION HOME */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #cde7f4; /* Couleur de fond général */
+
+  }
+  
+  /* HERO SECTION */
+  .hero-section {
+    background-color: #2196F3; /* Bleu vif */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px; /* Coins arrondis */
+    padding: 30px;
+    width: 90%;
+    max-width: 1000px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    gap: 20px;
+    border-bottom-right-radius: 150px; /* Arrondi en bas à droite */
+    
+  }
+  
+  /* Contenu à gauche */
+  .hero-content {
+    max-width: 60%;
+    transform: translateX(15%);
+
+  }
+  
+  .hero-content h1 {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 32px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .highlight {
+    font-size: 36px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-shadow: 2px 2px #010851;
+  }
+  
+  /* Infos de l'événement */
+  .event-info p {
+    margin: 8px 0;
+    font-size: 14px;
+  }
+  
+  .event-info i {
+    margin-right: 8px;
+    color: #FFB703;
+  }
+  
+  /* Bouton Get Started */
+  .btn-get-started {
+    display: inline-block;
+    background-color: #FFB703;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 15px;
+  }
+  
+  .btn-get-started:hover {
+    background-color: #FFFFFF;
+    color: #010851;
+    transform: scale(1.05);
+  }
+  
+
+  /* Logo à droite */
+.hero-logo img {
+    max-width: 150px;
+    height: auto;
+    transition: transform 0.5s ease;  /* Transition douce */
+    transform: translateX(-80%) translateY(20px); /* Déplacement horizontal et vertical */
+  }
+  
+  /* Effet au survol */
+  .hero-logo img:hover {
+    transform: translateX(-80%) translateY(40px) scale(1.1); /* Zoom + descente au survol */
+  }
+  
+  .icon {
+    width: 20px;              /* Taille de l'icône */
+    height: 20px;             /* Hauteur de l'icône */
+    margin-right: 8px;        /* Espace entre l'icône et le texte */
+    vertical-align: middle;   /* Alignement vertical avec le texte */
+  }
+  
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero-section {
+      flex-direction: column;
+      text-align: center;
+
+    }
+  
+    .hero-content, .hero-logo {
+      max-width: 100%;
+    }
+  
+    .hero-logo img {
+      margin-top: 20px;
+      transform: none; /* Pas de déplacement sur mobile */
+
+    }
+  }
+  /* SECTION ABOUT */
+.about {
+    display: flex; /* Utilise flexbox pour aligner le contenu à gauche et le logo à droite */
+    justify-content: space-between; /* Sépare le contenu et le logo avec de l'espace */
+    align-items: center; /* Centre verticalement */
+    padding: 40px 20px;
+    background-color: #cde7f4; /* Même couleur de fond que le body */
+}
+
+.about-content {
+    flex-grow: 1; /* Permet au contenu de prendre tout l'espace disponible */
+    padding: 20px;
+    text-align: justify; /* Aligne le texte à gauche */
+    transform: translateX(6%);
+}
+
+.about-content h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #ff9800; /* Orange pour matcher "speakers" en italique */
+  font-style: italic;
+}
+
+.about-content p {
+    color: #1E96FC;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Logo à droite */
+.about-logo img {
+    max-width: 220px; /* Logo plus grand */
+    height: auto;
+    transition: transform 0.5s ease, max-width 0.5s ease; /* Transition pour le mouvement et la taille */
+    transform: translateX(-40%); /* Déplacement horizontal */
+
+
+}
+
+/* Effet au survol */
+.about-logo img:hover {
+    transform: translateX(10) 
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column; /* Empile les éléments sur mobile */
+        text-align: center;
+    }
+
+    .about-content {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .about-logo img {
+        margin-top: 20px;
+        transform: none; /* Pas de déplacement sur mobile */
+    }
+}
+.sponsors {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrer les éléments */
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #cde7f4;
+  margin-top: 20px; /* Ajouter un espacement par rapport à la section About */
+}
+
+.sponsors h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #ff9800; /* Orange pour matcher "speakers" en italique */
+  font-style: italic;
+}
+
+/* Conteneur des logos */
+.sponsor-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px; /* Espacement entre les logos */
+  flex-wrap: wrap; /* Permet aux logos de s’adapter sur petits écrans */
+}
+
+/* Style des images */
+.sponsor-logos img {
+  height: 130px; /* Taille par défaut */
+  transition: transform 0.3s ease;
+}
+
+.sponsor-logos img.mobilis {
+  height: 170px; /* Taille spécifique pour Mobilis */
+}
+
+.sponsor-logos img:hover {
+  transform: scale(1.1); /* Effet de zoom au survol */
+}
+
+/* Style pour les flèches */
+.previous-icon, .next-icon {
+  width: 40px;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sponsor-logos {
+      flex-direction: column; /* Aligner les logos verticalement sur petits écrans */
+  }
+}
+/* SECTION speakers */
+.speakers {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #cde7f4; /* Couleur de fond similaire à ton image */
+}
+
+.speakers-content h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #ff9800; /* Orange pour matcher "speakers" en italique */
+  font-style: italic;
+
+}
+
+.speaker-cards {
+  display: flex;
+  flex-direction: column; /* Empile les éléments verticalement */
+  align-items: center;
+  gap: 40px; /* Espacement entre les speakers */
+}
+
+.speaker-card {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  background-color: transparent; /* Enlève le fond */
+  padding: 20px;
+  width: 60%; /* Ajuste la largeur */
+}
+
+.speaker-img {
+  
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #000; /* Contour noir autour des images */
+  margin-right: 20px;
+}
+
+.speaker-info h3 {
+  font-size: 22px;
+  color: #6495ed; /* Bleu clair pour matcher ton image */
+}
+
+.speaker-info p {
+  font-size: 16px;
+  font-style: italic;
+  color: #7a7a7a; /* Gris pour un effet plus doux */
+}
+.speaker-card:nth-child(1) { /* Riyadh */
+
+  transform: translateX(-190px); /* Il commence plus à droite */
+}
+
+.speaker-card:nth-child(2) { /* Mehdi */
+  
+  transform: translateX(-120px); /* Moins décalé */
+}
+
+.speaker-card:nth-child(3) { /* Selma */
+  transform: translateX(-40px); /* Pas de décalage */
+}
+
+
+.speaker-card:nth-child(1) .speaker-img { /* Riyadh */
+  width: 170px;
+  height: 170px;
+}
+
+.speaker-card:nth-child(2) .speaker-img { /* Mehdi */
+  width: 150px;
+  height: 150px;
+}
+
+.speaker-card:nth-child(3) .speaker-img { /* Selma */
+  width: 120px;
+  height: 120px;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #0084ff; /* Bleu */
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-container {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+/* Style des colonnes */
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  text-align: left;
+}
+
+.footer-logo img {
+  width: 120px;
+}
+
+.footer-description {
+  font-size: 14px;
+  margin-top: 10px;
+  opacity: 0.8;
+  transform: translateX(20px); /* Il commence plus à droite */
+}
+
+/* Navigation et Help */
+.footer-links, .footer-help {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li, .footer-help li {
+  margin-bottom: 8px;
+}
+
+.footer-links a, .footer-help a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-links a:hover, .footer-help a:hover {
+  text-decoration: underline;
+}
+
+/* Newsletter */
+.footer-newsletter {
+  margin-top: 20px;
+}
+
+.footer-newsletter input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 250px;
+  margin-right: 10px;
+}
+
+.subscribe-btn {
+  background-color: orange;
+  border: none;
+  padding: 10px 15px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.subscribe-btn:hover {
+  background-color: darkorange;
+}
+
+/* Ligne séparatrice */
+.footer-divider {
+  width: 80%;
+  margin: 20px auto;
+  border: 0.5px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Réseaux sociaux */
+.footer-social {
+  text-align: center;
+}
+
+.contact-text {
+  font-style: italic;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.social-icons a img {
+  width: 30px;
+  margin: 0 8px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a img:hover {
+  transform: scale(1.2);
+}
+
+
+html {
+  scroll-behavior: smooth;
+}

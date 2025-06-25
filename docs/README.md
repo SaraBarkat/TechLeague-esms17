@@ -1,7 +1,7 @@
 # TeachLeague 🏆
 Bienvenue sur **TeachLeague** ! Un site web dédié à la technologie et au sport.
 
-![Homepage](assets/images/homepage.png)
+![Homepage](assets/images/homepage.jpg)
 
 
 ## 🌍 Aperçu du projet  
